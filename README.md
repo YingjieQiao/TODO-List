@@ -15,6 +15,6 @@ but you can create an individual virtual environment for this app, if you want t
 
 4. Under your Python environment, run `python3 app.py`.
 
-5. Open up your favourite browser and go to "http://localhost:5000".
+5. Open up your favourite browser and go to "http://localhost:5000" (while `app.py` is running).
 
 6. And start using this to manage your tasks!
