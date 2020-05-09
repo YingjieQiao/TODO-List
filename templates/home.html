@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block content %}
+    {% for task in tasks %}
+        <article class="media content-section">
+            <div class="media-body">
+                <div class="article-metadata">
+                    <small class="text-muted">{{ task.time_posted.strftime("%m/%d/%Y, %H:%M:%S") }}</small>
+                </div>
+                <h2><a class="article-title" href="{{ url_for("task", task_id=task.id) }}">{{ task.title }}</a></h2>
+                <p class="article-content">{{ task.content }}</p>
+            </div>
+        </article>
+    {% endfor %}
+{% endblock content %}
